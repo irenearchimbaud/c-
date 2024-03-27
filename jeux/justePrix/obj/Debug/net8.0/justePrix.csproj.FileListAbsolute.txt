@@ -12,3 +12,4 @@ C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.pdb
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.genruntimeconfig.cache
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\ref\justePrix.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.sourcelink.json

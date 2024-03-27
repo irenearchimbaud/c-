@@ -12,3 +12,4 @@ C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\pendu\obj\Debug\net8.0\pendu.pdb
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\pendu\obj\Debug\net8.0\pendu.genruntimeconfig.cache
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\pendu\obj\Debug\net8.0\ref\pendu.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\pendu\obj\Debug\net8.0\pendu.sourcelink.json
