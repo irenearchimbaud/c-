@@ -11,6 +11,7 @@ class Program
 
             int maxTry;
             int numberTries;
+            bool isGameWin = false;
 
             while (true)
             {
@@ -67,6 +68,7 @@ class Program
                         Console.WriteLine(" ");
                         Console.WriteLine($"🎉 Bravo !! Vous avez gagné. Le nombre choisi par l'ordinateur était {randomNumber}. Vous avez effectué {tries} tentatives. 🎉💪");
                         Console.WriteLine(" ");
+                        isGameWin = true;
                         break;
                     }
                 }
@@ -82,7 +84,7 @@ class Program
 
             }
 
-            if(tries == maxTry) {
+            if(tries == maxTry && !isGameWin) {
                 Console.WriteLine(" ");
                 Console.WriteLine($"❌❌❌ Vous avez effectué {maxTry} tentatives. Vous avez perdu. Le nombre de l'ordinateur était {randomNumber} ❌❌❌");
                 Console.WriteLine(" ");
