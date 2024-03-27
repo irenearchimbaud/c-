@@ -1,0 +1,14 @@
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.AssemblyInfoInputs.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.AssemblyInfo.cs
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.csproj.CoreCompileInputs.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\bin\Debug\net8.0\02td.exe
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\bin\Debug\net8.0\02td.deps.json
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\bin\Debug\net8.0\02td.runtimeconfig.json
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\bin\Debug\net8.0\02td.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\bin\Debug\net8.0\02td.pdb
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\refint\02td.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.pdb
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\02td.genruntimeconfig.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\exercices\02td\obj\Debug\net8.0\ref\02td.dll

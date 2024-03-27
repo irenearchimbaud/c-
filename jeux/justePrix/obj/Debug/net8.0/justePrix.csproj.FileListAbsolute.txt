@@ -1,0 +1,14 @@
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\bin\Debug\net8.0\justePrix.exe
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\bin\Debug\net8.0\justePrix.deps.json
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\bin\Debug\net8.0\justePrix.runtimeconfig.json
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\bin\Debug\net8.0\justePrix.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\bin\Debug\net8.0\justePrix.pdb
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.AssemblyInfoInputs.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.AssemblyInfo.cs
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.csproj.CoreCompileInputs.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\refint\justePrix.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.pdb
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\justePrix.genruntimeconfig.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\justePrix\obj\Debug\net8.0\ref\justePrix.dll

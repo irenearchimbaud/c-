@@ -1,0 +1,4 @@
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\snake\obj\Debug\net8.0\snake.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\snake\obj\Debug\net8.0\snake.AssemblyInfoInputs.cache
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\snake\obj\Debug\net8.0\snake.AssemblyInfo.cs
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\jeux\snake\obj\Debug\net8.0\snake.csproj.CoreCompileInputs.cache
