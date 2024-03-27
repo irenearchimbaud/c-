@@ -12,11 +12,43 @@ class Program {
         bool[] guessedLetters = new bool[selectedWord.Length];
         List<string> foundedLetters = new List<string>();
 
+        Console.WriteLine(" ");
         Console.WriteLine("Bienvenue dans le pendu. Vous pouvez taper ! à tout moment pour quitter le jeu.");
         Console.WriteLine(" ");
         Console.Write("Veuillez selectionner votre niveau de difficulté (1 = facile; 2 = moyen; 3 = difficile) OU quittez le jeu en cliquant sur !: ");
 
         string? difficultLevel = Console.ReadLine();
+
+        while(difficultLevel != "1" && difficultLevel != "2" && difficultLevel != "3")
+        {
+            if(difficultLevel == "!")
+            {
+                Console.WriteLine("êtes-vous sûrs de vouloir quitter le jeu ? (Tapez oui pour quiter)");
+
+                string? exitJeux = Console.ReadLine();
+
+                if(exitJeux != null && exitJeux.ToLower() == "oui")
+                {
+                    Console.WriteLine("Vous avez quitté le jeu.");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Vous avez décidé de ne pas quitter le jeux");
+                }
+                
+            }
+            else
+            {
+                Console.WriteLine("Merci de selecctionner un chiffre entre 1 et 3");
+            }
+
+            Console.WriteLine(" ");
+            Console.Write($"$Veuillez selectionner votre niveau de difficulté (1 = facile; 2 = moyen; 3 = difficile) OU quittez le jeu en cliquant sur !: ");
+            
+
+            difficultLevel = Console.ReadLine();
+        }
 
         switch (difficultLevel) {
             case "1":
@@ -28,6 +60,7 @@ class Program {
             case "3":
                 maxTries = 10;
                 break;
+
         }
 
         while (tries < maxTries) {
@@ -44,11 +77,23 @@ class Program {
             bool wordGuessed = true;
 
             if (userInput == "!") {
-                break;
+                Console.WriteLine("Etes-vous sur de vouloir quitter le jeu ? (Tapper oui pour quiter)");
+
+                string? exitJeux = Console.ReadLine();
+
+                if(exitJeux != null && exitJeux.ToLower() == "oui")
+                {
+                    Console.WriteLine("Vous avez quitté le jeu.");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Vous avez décidé de ne pas quitter le jeux");
+                }
             }
 
-            if (userInput.Length != 1 || !Char.IsLetter(userInput[0])) {
-                Console.WriteLine("Veuillez entrer une seule lettre !");
+            if (string.IsNullOrEmpty(userInput) || userInput.Length != 1 || !Char.IsLetter(userInput[0])) {
+                Console.WriteLine("Veuillez entrer une lettre !");
                 continue;
             } else {
                 userLetter = Char.ToLower(userInput[0]);
