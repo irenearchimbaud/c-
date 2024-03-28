@@ -1,5 +1,52 @@
 # Le Juste Prix:
 
+```csharp
+variable : nombre Essais Maximum
+variable : nombre Essais EnCours
+variable tableau : liste de mots qui peuvent être choisis par l'ordinateur
+variable : taille du tableau de liste de mots
+variable random
+variable mot choisi en utilisant la variable random avec la variable de la taille du tableau
+variable bool avec true si le mot est choisi
+variable liste pour la liste des lettres trouvées
+
+Message bienvenue etc ...
+Message choisir la difficulté
+
+variable difficulté choisie (valeur de la difficulté que l'utilisateur a choisi)
+
+TANT QUE (while) la difficulté != (différent) 1 ET difficulté != 2 ET difficulté != 3
+    SI difficulté == (égale) !
+        message confirmation pour quitter le jeu
+        enregistrer reponse utilisateur dans variable
+        SI réponse != null ET reponse == oui
+            message vous avez quitté le jeu
+            return
+        SINON
+            message vous n'avez pas quitté le jeu
+    SINON
+        message erreur : séléctionner chiffre entre 1 et 3
+    Message choisir la difficulté
+    variable difficulté choisie = valeur que l'utilisateur a choisi
+
+SWITCH pour la valeur de la variable difficulté choisie
+    CASE 1
+        variable nombre essais maximum = 14
+        break
+    CASE 2
+        variable nombre essais maximum = 12
+        break
+    CASE 3
+        variable nombre essais maximum = 10
+        break
+
+TANT QUE nombre essais en cours < (plus petit) que nombre essais maximum
+    message choisir lettre
+    variable : récupérer la lettre choisie
+```
+
+
+
 Définir liste de mots prédéfinis dans un tableau
 
 Utiliser random pour choisir un element du tableau aléatoirement

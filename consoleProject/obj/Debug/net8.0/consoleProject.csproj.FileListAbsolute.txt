@@ -12,3 +12,4 @@ C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\cons
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\consoleProject\obj\Debug\net8.0\consoleProject.pdb
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\consoleProject\obj\Debug\net8.0\consoleProject.genruntimeconfig.cache
 C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\consoleProject\obj\Debug\net8.0\ref\consoleProject.dll
+C:\Users\irene\OneDrive\Documents\Irène\Développement\cours_algorithme_C#\consoleProject\obj\Debug\net8.0\consoleProject.sourcelink.json
