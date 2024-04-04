@@ -12,7 +12,7 @@ dossier d'exercices faits durant la semaine
 -  `02td`
 -  `03td`
 
-## priseDeNots
+## priseDeNotes
 
 dossier contenant les prises de notes des cours effectués durant la semaine
 
