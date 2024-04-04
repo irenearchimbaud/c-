@@ -112,14 +112,14 @@ class Program {
                 foreach (string letter in foundedLetters) {
                     if (letter.ToString() == userLetter.ToString()) {
                         isFoundedLetter = true; // Marque que la lettre a déjà été entrée
-                        
                     }
                 }
 
-                if (!isFoundedLetter) {
-                    tries++;
+                if (!isFoundedLetter) { // Si la lettre n'a pas déjà été tentée
+                    tries++; // nombre d'essais + 1
 
-                    if (maxTries == 10) {
+                    // Dessine la partie du pendu correspondant au nombre d'essais restants selon le niveau de difficulté
+                    if (maxTries == 10) { 
                         DrawPenduLvl3(tries);
                     } else if (maxTries == 12) {
                         DrawPenduLvl2(tries);
@@ -127,15 +127,18 @@ class Program {
                         DrawPenduLvl1(tries);
                     }
 
+                    // message comme quoi la lettre n'est pas dans le mot
                     Console.WriteLine($"La lettre '{userLetter}' n'est pas dans le mot.");
                     Console.WriteLine(" ");
-                    foundedLetters.Add(userLetter.ToString());
+                    foundedLetters.Add(userLetter.ToString()); // Ajoute la lettre à la liste des lettres essayées
 
-                } else if (isFoundedLetter) {
+                } else if (isFoundedLetter) { // Si la lettre a déjà été tentée
 
+                    // message comme quoi la lettre a déja été entrée
                     Console.WriteLine($"La lettre '{userLetter}' a déjà été entrée");
                     Console.WriteLine(" ");
 
+                     // Dessine la partie du pendu correspondant au nombre d'essais restants selon le niveau de difficulté
                     if (maxTries == 10) {
                         DrawPenduLvl3(tries);
                     } else if (maxTries == 12) {
@@ -146,7 +149,8 @@ class Program {
 
                     Console.WriteLine(" ");
                 }
-            } else {
+            } else { // Si la lettre est trouvée dans le mot
+                // Dessine la partie du pendu correspondant au nombre d'essais restants selon le niveau de difficulté
                 if (maxTries == 10) {
                     DrawPenduLvl3(tries);
                 } else if (maxTries == 12) {
@@ -155,32 +159,33 @@ class Program {
                     DrawPenduLvl1(tries);
                 }
 
+                // message indiquand que la lettre est dans le mot 
                 Console.WriteLine($"La lettre '{userLetter}' est dans le mot !");
                 Console.WriteLine(" ");
             }
+            // etat du mot actuel
             Console.WriteLine("Mot actuel: ");
 
+            // Affiche le mot partiellement deviné, remplaçant les lettres non devinées par des tirets
             for (int i = 0; i < selectedWord.Length; i++) {
-                if (guessedLetters[i])
-                {
-                    Console.Write(selectedWord[i]);
-                } else
-                {
-                    Console.Write("_");
-                }
+                if (guessedLetters[i]) {
+                    Console.Write(selectedWord[i]); // Si la lettre a été devinée, l'affiche
+                } else {
+                    Console.Write("_");  // Sinon, affiche un tiret
+                } 
             }
 
             Console.WriteLine();
 
-            foreach (bool found in guessedLetters) {
-                if (!found)
-                {
-                    wordGuessed = false;
+            foreach (bool found in guessedLetters) { // Vérifie si toutes les lettres du mot ont été devinées
+                if (!found) {
+                    wordGuessed = false; // S'il reste au moins une lettre non devinée: marque que le mot n'a pas été entièrement deviné
                     break;
                 }
             }
 
-            if (wordGuessed) {
+            if (wordGuessed) { // Si toutes les lettres du mot ont été devinées, affiche un message de victoire
+                // message de bravo
                 Console.WriteLine(" ");
                 Console.WriteLine($"BRAVO ! Vous avez trouvé le mot ! Le mot était : {selectedWord}");
                 Console.WriteLine(" ");
@@ -188,11 +193,12 @@ class Program {
             }
             
         }
-        if (tries == maxTries) {
-            Console.WriteLine($"Vous êtes pendus... Le mot était : {selectedWord}");
+        if (tries == maxTries) { // Si le nombre d'essais est épuisé, affiche un message de défaite avec le mot correct
+            Console.WriteLine($"Vous êtes pendus... Le mot était : {selectedWord}"); // message de défaite
         }
     }
 
+        // mes 3 fonctions de dessin de pendu selon le niveau de difficulté choisi
         static void DrawPenduLvl3(int attempts)
         {
             switch (attempts)
