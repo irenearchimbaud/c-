@@ -1,8 +1,8 @@
-# Le Juste Prix:
+# Le Pendu:
 
 ```csharp
 variable : nombre Essais Maximum
-variable : nombre Essais EnCours
+variable : nombre Essais En Cours
 variable tableau : liste de mots qui peuvent être choisis par l'ordinateur
 variable : taille du tableau de liste de mots
 variable random
@@ -43,104 +43,61 @@ SWITCH pour la valeur de la variable difficulté choisie
 TANT QUE nombre essais en cours < (plus petit) que nombre essais maximum
     message choisir lettre
     variable : récupérer la lettre choisie
+
+    SI la lettre choisie est égale à '!'
+        message confirmation pour quitter le jeu
+        enregistrer réponse utilisateur dans variable
+        SI réponse != null ET réponse == oui
+            message vous avez quitté le jeu
+            return
+        SINON
+            message vous n'avez pas quitté le jeu
+
+    SINON SI la lettre choisie est vide ou n'est pas une lettre seule 
+        message merci d'entrer une lettre valide
+        continuer avec la prochaine itération de la boucle
+
+    SINON
+        stocker la lettre choisie en minuscule dans une variable
+
+        POUR chaque lettre dans le mot sélectionné
+
+            SI la lettre actuelle est égale à la lettre choisie
+                marquer la lettre comme devinée
+                indiquer que la lettre a été trouvée dans le mot
+
+        SI la lettre n'a pas été trouvée dans le mot
+
+            POUR chaque lettre dans les lettres déjà tentées
+
+                SI la lettre est identique à la lettre choisie
+                    indiquer que la lettre a été déjà choisie
+                    
+            SI la lettre n'a pas été déjà choisie
+                augmenter le nombre d'essais
+                dessiner une partie supplémentaire du pendu selon la difficulté choisie
+                afficher un message indiquant que la lettre n'est pas dans le mot
+                ajouter la lettre aux lettres déjà tentées
+
+        SINON SI la lettre a déjà été choisie
+            afficher un message indiquant que la lettre a déjà été entrée
+            dessiner une partie supplémentaire du pendu selon la difficulté choisie
+
+    SI la lettre est trouvée dans le mot
+        dessiner une partie supplémentaire du pendu selon la difficulté choisie
+        afficher un message indiquant que la lettre est dans le mot
+
+    afficher le mot actuel avec les lettres devinées et des _ pour les lettres non devinées
+
+    POUR chaque lettre dans les lettres devinées
+        SI une lettre n'est pas devinée
+            indiquer que le mot n'est pas entièrement deviné
+            sortir de la boucle
+
+    SI le mot est entièrement deviné
+        afficher un message de victoire
+        sortir de la boucle
+
+SI le nombre d'essais atteint le nombre d'essais maximum
+    afficher un message de défaite
 ```
-
-
-
-Définir liste de mots prédéfinis dans un tableau
-
-Utiliser random pour choisir un element du tableau aléatoirement
-
-definir le nombre d'essais max
-
-definir booleenne lettre trouvée 
-
-definir le nombre d'essais effectués
-
-message de bienvenue + message pour selectionner la difficulté
-
-definir liste de lettres essayées mais fausses
-
-SI c'est 1
-
-essais max = 14
-
-SINON SI c'est 2
-
-essais max = 12
-
-SINON SI c'est 3
-
-essais max = 10
-
-TANT QUE (boucle while) le nombre d'essais effectué est plus petit que le nombre d'essais max
-
-definir booleenne false pour les lettres essayées mais fausses
-
-message: essai restant
-
-choisir une lettre et recuperer la lettre choisie dans une variable
-
-SI la lettre choisie est ! quitter le jeu
-
-SI la taille de la saisie de l'user depasse 1 , afficher erreur
-
-BOUCLE FOR autant de fois qu'il y a de lettres dans le mot choisi par l'ordinateur 
-
-definir booleenne lettres trouvees
-
-si oui lettre trouvee (bool) = true
-
-
-
-SI la booleenne lettre trouvee est false
-
-FOREACH pour chaque lettre dans le tableau de lettres essayées 
-
-SI la lettre est la même que la lettre entree par l'utilisateur
-
-afficher message qui dit que la lettre a deja ete essayée et l'ajouter au tableau de lettres deja essayées
-
-SI le nombre max d'essai est 10: afficher le pendu du niv 3
-
-SI le nombre max d'essai est 12: afficher le pendu du niv 2
-
-SI le nombre max d'essai est 14: afficher le pendu du niv 1
-
-SINON 
-
-SI le nombre max d'essai est 10: afficher le pendu du niv 3
-
-SI le nombre max d'essai est 12: afficher le pendu du niv 2
-
-SI le nombre max d'essai est 14: afficher le pendu du niv 1
-
-afficher le message de lettre trouvée
-
-
-afficher le message de l'état du mot actuel :
-
-boucle FOR du nombre de lettres du mot séléctionnée
-
-SI la lettre est trouvée
-
-on ecrit la lettre a l'index de la lettre trouvéé
-
-SINON on ecrit _
-
-
-SI le mot est trouvé entièrement: afficher message BRAVO avec le mot
-
-
-
-SI le nombre d'essai de l'utilisateur est = au nombre max de tentatives :
-
-afficher le message de défaite
-
-
-
-créér les 3 dessins de pendus selon le niveau donc le nombre d'essai max
-
-(case 1, case 2, case 3...)
-
-break
