@@ -2,38 +2,28 @@
 
 class Program
 {
-    static void Main(string[] args)
-    {
+    static void Main(string[] args) {
         bool isInGame = true;
         
-        while (isInGame)
-        {
+        while (isInGame) {
 
             int maxTry;
             int numberTries;
             bool isGameWin = false;
 
-            while (true)
-            {
+            while (true) {
                 Console.WriteLine(" ");
                 Console.Write(" 👉 Veuillez choisir un nombre de tours: ");
 
                 string? numberReadLine = Console.ReadLine();
 
-                // regarde si l'utilisateur à séléctionné un nombre si oui il l'ajoute dans la variable number
-                if (int.TryParse(numberReadLine, out int number))
-                {
+                if (int.TryParse(numberReadLine, out int number)) {
                     numberTries = Convert.ToInt32(number);
                     maxTry = Convert.ToInt32(number);
-
                     break;
-                }
-                else if(numberReadLine != null && numberReadLine.ToLower() == "q")
-                {
+                } else if(numberReadLine != null && numberReadLine.ToLower() == "q") {
                     return;
-                }
-                else
-                {
+                } else {
                     Console.WriteLine("Veuillez entrer un nombre valide !");
                 }
             }
@@ -49,9 +39,7 @@ class Program
                 Console.Write($"Il vous reste {numberTries} tentatives. Devinez le nombre (entre 1 et 10 000) 😁😁😁 : ");
                 string? userType = Console.ReadLine();
 
-                // regarde si l'utilisateur à séléctionné un nombre si oui il l'ajoute dans la variable userNumber
-                if (int.TryParse(userType, out int userNumber))
-                {
+                if (int.TryParse(userType, out int userNumber)) {
                     if (userNumber < randomNumber) {
                         Console.WriteLine("                ----- 🔼 C'est plus ! :D-----");
                         Console.WriteLine(" ");
@@ -71,13 +59,9 @@ class Program
                         isGameWin = true;
                         break;
                     }
-                }
-                else if(userType != null && userType.ToLower() == "q")
-                {
+                } else if(userType != null && userType.ToLower() == "q") {
                     return;
-                }
-                else
-                {
+                } else {
                     i--;
                     Console.WriteLine("Veuillez entrer un nombre valide !");
                 }
@@ -95,8 +79,7 @@ class Program
 
             string? retry = Console.ReadLine();
 
-            if(retry.ToLower() != "oui")
-            {
+            if(retry.ToLower() != "oui") {
                 isInGame = false;
                 Console.WriteLine("");
                 Console.WriteLine("Vous avez quitté le jeu.");
